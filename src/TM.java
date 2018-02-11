@@ -19,6 +19,7 @@ class Log {
    public Log(String name) {
       this.name = name;
    }
+   //testing git
    
    /*Writes the Task Name and Start Time to the file; taken from TM's Start Method*/
    public void WriteToFileTime(Date time) { 
