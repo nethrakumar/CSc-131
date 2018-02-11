@@ -19,7 +19,7 @@ class Log {
    public Log(String name) {
       this.name = name;
    }
-   //testing git
+   
    
    /*Writes the Task Name and Start Time to the file; taken from TM's Start Method*/
    public void WriteToFileTime(Date time) { 
@@ -214,6 +214,16 @@ public class TM {
 	      entry.WriteToFileTime(stop);
 	      return;
 	  }
+   }
+   
+   /*Gets the Task Name and Size*/
+   public void Size(String name, String size) {
+	   String taskName = name;
+	   System.out.println(taskName);
+	   System.out.println(size);
+	   Log entry = new Log(name);
+	   entry.WriteToFileSize(size);
+	   return;
    }
    
    /*Gets the Task Name and Description*/
